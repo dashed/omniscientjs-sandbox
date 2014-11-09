@@ -4,7 +4,14 @@
 var
 component = require('omniscient');
 
-module.exports = component('Panel', function (props, statics) {
+var AlwaysRerender = {
+    shouldComponentUpdate: function () {
+        return true;
+    }
+};
+
+module.exports = component('Panel', AlwaysRerender, function (props, statics) {
+
 
     return (
         <div>

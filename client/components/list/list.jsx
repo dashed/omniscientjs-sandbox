@@ -2,6 +2,8 @@ var
 EventEmitter = require("eventemitter3"),
 component = require('omniscient');
 
+component.debug()
+
 var Item = require('./item.jsx');
 
 var events = new EventEmitter();

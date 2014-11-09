@@ -12,8 +12,6 @@ module.exports = component(function (props, statics) {
         statics.events.emit('delete', cursor);
     }
 
-    // console.log('item: ' + cursor.get('id'));
-
     return (
         <div key={cursor.get('id')}>
             <span>{cursor.get('title')}</span>
